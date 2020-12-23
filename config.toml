@@ -1,0 +1,77 @@
+baseURL = "https://yirzhou.github.io"
+languageCode = "en-us"
+title = "Yiren Zhou"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+archetypeDir = "archetypes"
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
+enableMissingTranslationPlaceholders = false
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+# [permalinks]
+# posts = "/posts/:year/:month/:title/"
+
+[author]
+name = "Yiren Zhou"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02"
+
+disableReadOtherPosts = false
+
+enableSharingButtons = true
+
+justifyContent = false
+
+[params.logo]
+logoText = "$ cd /home/yirzhou"
+logoHomeLink = "/"
+
+[[params.social]]
+name = "email"
+url = "mailto:yiren.chow@gmail.com"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/yirzhou"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/yirzhou"
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "about"
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "posts/"
