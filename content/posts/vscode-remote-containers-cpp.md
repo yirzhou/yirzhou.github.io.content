@@ -54,7 +54,7 @@ In the following sections, I will walk through my routine setup for C++ developm
 
 ### 4.2 `.devcontainer.json`
 
-First, we need to define how VSCode can build and open up a container in a special file: `.devcontainer.json`. This file can be standalone in your root project directory, or in a separate `.devcontainer` directory.
+First, we need to define how VSCode can build and open up a container in a special file: `.devcontainer.json`. This file can be standalone in your root project directory, or in a separate `.devcontainer` directory (`.devcontainer/devcontainer.json`, without the first dot if in the directory).
 
 We can set values of plenty of [properties](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) that define the locations of `docker-compose.yml`, `Dockerfile`, on-init and post-init commands, extensions we wish to install, and many more. For me, I have the following setup:
 
@@ -109,9 +109,12 @@ services:
       - CTEST_OUTPUT_ON_FAILURE=1
       - GTEST_COLOR=1
       - CMAKE_GENERATOR=Ninja
+    command: sleep infinity
 ```
 
 This file has minimal configurations: the most important part is `volumes` that mounts my project directory to `/workspace` in the container. I also set some C++-specific environment variables for CMake.
+
+`sleep infinity` allows the container to be running instead of exiting immediately which will cause an error.
 
 ### 4.4 `Dockerfile`
 
