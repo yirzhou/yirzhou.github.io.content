@@ -1,5 +1,5 @@
 ---
-title: "Last Christmas"
+title: "A Different Christmas Vibe"
 date: 2020-12-25
 draft: false
 toc: false
