@@ -8,6 +8,7 @@ tags:
   - gtest
   - cpp
   - cmake
+  - technical
 ---
 
 ## Background
