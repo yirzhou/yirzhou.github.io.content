@@ -1,6 +1,6 @@
 ---
 title: "Getting Stuff Done Feels Good Again"
-date: 2021-01-31
+date: 2021-01-30
 draft: false
 toc: false
 images:
